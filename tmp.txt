@@ -1,0 +1,48 @@
+       <div class="boxIcons">
+            <i class="fa-solid fa-cat"></i> <span>Cat</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-crow"></i> <span>Crow</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-dog"></i> <span>Dog</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-dove"></i> <span>Dove</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-dragon"></i> <span>Dragon</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-horse"></i> <span>Horse</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-hippo"></i> <span>Hippo</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-fish"></i> <span>Fish</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-carrot"></i> <span>Carrot</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-apple-alt"></i> <span>Apple-alt</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-lemon"></i> <span>Lemon</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-pepper-hot"></i> <span>Pepper-hot</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-user-astronaut"></i> <span>User-Astronaut</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-user-graduate"></i> <span>User-Graduate</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-user-ninja"></i> <span>User-Ninja</span>
+        </div>
+        <div class="boxIcons">
+            <i class="fa-solid fa-user-secret"></i> <span>User-secret</span>
+        </div>

@@ -1,0 +1,30 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1
+{
+    font-weight: bold;
+    line-height: 6rem;
+}
+
+.iconsContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    .box
+    {
+        width: calc( 100% / 4 );
+        border: 1px solid red;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    } 
+}
+
+.container-fluid
+{
+    height: 6rem;
+}

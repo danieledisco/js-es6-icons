@@ -154,4 +154,17 @@ const listObjects =
 	}
 ];
 
+const iconsContainerEl = document.querySelector(".iconsContainer");
 
+const boxElement = document.createElement('div');
+    boxElement.className = 'box';
+	
+	const icons = document.createElement('i');
+	const listIcons = icons.classList;
+	listIcons.add("fa-solid");
+	listIcons.add("fa-cat");
+	icons.style.color = "red";
+
+	boxElement.append(icons);
+	boxElement.innerHTML += "CAT";
+	iconsContainerEl.append(boxElement)

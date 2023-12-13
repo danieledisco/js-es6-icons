@@ -46,3 +46,60 @@
         <div class="boxIcons">
             <i class="fa-solid fa-user-secret"></i> <span>User-secret</span>
         </div>
+
+
+            <div class="box">
+
+
+                <i class="fa-solid fa-cat"></i>
+                CAT
+  
+
+
+
+            </div>     
+            <div class="box">
+                lorem
+            </div>       
+            <div class="box">
+                lorem
+            </div>       
+            <div class="box">
+                lorem
+            </div>
+            <div class="box">
+                lorem
+            </div>
+            <div class="box">
+                lorem
+            </div>       
+            <div class="box">
+                lorem
+            </div>       
+            <div class="box">
+                lorem
+            </div>
+            <div class="box">
+                lorem
+            </div>
+            <div class="box">
+                lorem
+            </div>       
+            <div class="box">
+                lorem
+            </div>       
+            <div class="box">
+                lorem
+            </div>
+            <div class="box">
+                lorem
+            </div>
+            <div class="box">
+                lorem
+            </div>       
+            <div class="box">
+                lorem
+            </div>       
+            <div class="box">
+                lorem
+            </div>

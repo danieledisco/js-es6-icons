@@ -12,19 +12,32 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
+    background-color: lightgray;
+
     .box
     {
-        width: calc( 100% / 4 );
-        border: 1px solid red;
+        width: calc(  (100% - ( 8 * 4rem )) / 4 );
+        border: 1px solid black;
         aspect-ratio: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        margin: 4rem;
+        background-color: white;
+        flex-direction: column;
+        font-weight: bold;
+        border-radius: 10px;
+        box-shadow: 3px 3px #888888;
     } 
 }
 
 .container-fluid
 {
     height: 6rem;
+}
+
+i
+{
+    color: black;
+    font-size: 3rem;
 }

@@ -177,9 +177,8 @@ function createIconAndBoxElement(boxElement, item)
 	const listIcons = icons.classList;
 	listIcons.add("fa-solid");
 	listIcons.add("fa-" + item.name);
-/* 	icons.style.color = item.color;
- */
-	icons.style.color = ("black");
+ 	icons.style.color = item.color;
+	//icons.style.color = ("black");
 	boxElement.append(icons);
 	boxElement.innerHTML += item.name;
 }

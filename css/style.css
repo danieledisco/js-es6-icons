@@ -31,13 +31,29 @@ h1
     } 
 }
 
-.container-fluid
+#header_top
 {
     height: 6rem;
 }
+
+#header_down
+{
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 i
 {
     color: black;
     font-size: 3rem;
+}
+.labelSelect
+{
+    color: white;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }

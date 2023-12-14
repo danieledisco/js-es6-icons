@@ -11,12 +11,19 @@
   <body>
 
     <div class="container">
-         <header class="container-fluid text-primary">
+         <header id="header_top" class="container-fluid text-primary">
             <h1>FontIcons</h1>
         </header>
 
-         <header class="container-fluid bg-primary">
-        
+         <header id="header_down" class="container-fluid bg-primary">
+          <div class="labelSelect">FILTRA PER TIPO</div>
+          <select id='selectType' name='selectType'>
+            <option value='0'>all</option>
+            <option value='1'>animal</option>
+            <option value='2'>vegetable</option>
+            <option value='3'>user</option>
+        </select>
+
         </header>
 
         <div class="iconsContainer">

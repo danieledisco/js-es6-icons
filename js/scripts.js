@@ -24,161 +24,187 @@
  * 2 - popolare le options della select della milestone 3 dinamicamente.
  */
 const listIcons =
-[
-	{
-		name: 'cat',
-		prefix: 'fa-',
-		type: 'animal',
-		family: 'fas',
-		color: 'orange'
-	}
-    ,
-	{
-		name: 'crow',
-		prefix: 'fa-',
-		type: 'animal',
-		family: 'fas',
-		color: 'orange'
-	}
-    ,
-	{
-		name: 'dog',
-		prefix: 'fa-',
-		type: 'animal',
-		family: 'fas',
-		color: 'orange'
-	}
-    ,
-	{
-		name: 'dove',
-		prefix: 'fa-',
-		type: 'animal',
-		family: 'fas',
-		color: 'orange'
-	}
-    ,
-	{
-		name: 'dragon',
-		prefix: 'fa-',
-		type: 'animal',
-		family: 'fas',
-		color: 'orange'
-	}
-    ,
-	{
-		name: 'horse',
-		prefix: 'fa-',
-		type: 'animal',
-		family: 'fas',
-		color: 'orange'
-	}
-    ,
-	{
-		name: 'hippo',
-		prefix: 'fa-',
-		type: 'animal',
-		family: 'fas',
-		color: 'orange'
-	}
-    ,
-	{
-		name: 'fish',
-		prefix: 'fa-',
-		type: 'animal',
-		family: 'fas',
-		color: 'orange'
-	}
-    ,
-	{
-		name: 'carrot',
-		prefix: 'fa-',
-		type: 'vegetable',
-		family: 'fas',
-		color: 'green'
-	}
-    ,
-	{
-		name: 'apple-alt',
-		prefix: 'fa-',
-		type: 'vegetable',
-		family: 'fas',
-		color: 'green'
-	}
-    ,
-	{
-		name: 'lemon',
-		prefix: 'fa-',
-		type: 'vegetable',
-		family: 'fas',
-		color: 'green'
-	}
-    ,
-	{
-		name: 'pepper-hot',
-		prefix: 'fa-',
-		type: 'vegetable',
-		family: 'fas',
-		color: 'green'
-	}
-    ,
-	{
-		name: 'user-astronaut',
-		prefix: 'fa-',
-		type: 'user',
-		family: 'fas',
-		color: 'blue'
-	}
-    ,
-	{
-		name: 'user-graduate',
-		prefix: 'fa-',
-		type: 'user',
-		family: 'fas',
-		color: 'blue'
-	}
-    ,
-	{
-		name: 'user-ninja',
-		prefix: 'fa-',
-		type: 'user',
-		family: 'fas',
-		color: 'blue'
-	}
-    ,
-	{
-		name: 'user-secret',
-		prefix: 'fa-',
-		type: 'user',
-		family: 'fas',
-		color: 'blue'
-	}
-];
+	[
+		{
+			name: 'cat',
+			prefix: 'fa-',
+			type: 'animal',
+			family: 'fas',
+			color: 'orange'
+		}
+		,
+		{
+			name: 'crow',
+			prefix: 'fa-',
+			type: 'animal',
+			family: 'fas',
+			color: 'orange'
+		}
+		,
+		{
+			name: 'dog',
+			prefix: 'fa-',
+			type: 'animal',
+			family: 'fas',
+			color: 'orange'
+		}
+		,
+		{
+			name: 'dove',
+			prefix: 'fa-',
+			type: 'animal',
+			family: 'fas',
+			color: 'orange'
+		}
+		,
+		{
+			name: 'dragon',
+			prefix: 'fa-',
+			type: 'animal',
+			family: 'fas',
+			color: 'orange'
+		}
+		,
+		{
+			name: 'horse',
+			prefix: 'fa-',
+			type: 'animal',
+			family: 'fas',
+			color: 'orange'
+		}
+		,
+		{
+			name: 'hippo',
+			prefix: 'fa-',
+			type: 'animal',
+			family: 'fas',
+			color: 'orange'
+		}
+		,
+		{
+			name: 'fish',
+			prefix: 'fa-',
+			type: 'animal',
+			family: 'fas',
+			color: 'orange'
+		}
+		,
+		{
+			name: 'carrot',
+			prefix: 'fa-',
+			type: 'vegetable',
+			family: 'fas',
+			color: 'green'
+		}
+		,
+		{
+			name: 'apple-alt',
+			prefix: 'fa-',
+			type: 'vegetable',
+			family: 'fas',
+			color: 'green'
+		}
+		,
+		{
+			name: 'lemon',
+			prefix: 'fa-',
+			type: 'vegetable',
+			family: 'fas',
+			color: 'green'
+		}
+		,
+		{
+			name: 'pepper-hot',
+			prefix: 'fa-',
+			type: 'vegetable',
+			family: 'fas',
+			color: 'green'
+		}
+		,
+		{
+			name: 'user-astronaut',
+			prefix: 'fa-',
+			type: 'user',
+			family: 'fas',
+			color: 'blue'
+		}
+		,
+		{
+			name: 'user-graduate',
+			prefix: 'fa-',
+			type: 'user',
+			family: 'fas',
+			color: 'blue'
+		}
+		,
+		{
+			name: 'user-ninja',
+			prefix: 'fa-',
+			type: 'user',
+			family: 'fas',
+			color: 'blue'
+		}
+		,
+		{
+			name: 'user-secret',
+			prefix: 'fa-',
+			type: 'user',
+			family: 'fas',
+			color: 'blue'
+		}
+	];
 
 
 
 const iconsContainerEl = document.querySelector(".iconsContainer");
 
-for (let i=0; i < listIcons.length; i++)
+for (let i = 0; i < listIcons.length; i++)
 {
 	const boxElement = document.createElement('div');
 	boxElement.className = 'box';
 	const obj = listIcons[i];
-	createIconAndBoxElement(boxElement,obj);
+	createIconAndBoxElement(boxElement, obj);
 	iconsContainerEl.append(boxElement);
 }
-	
 
 
 
 
-function createIconAndBoxElement(boxElement, item)
+
+function createIconAndBoxElement(boxElement, item) 
 {
 	const icons = document.createElement('i');
 	const listIcons = icons.classList;
 	listIcons.add("fa-solid");
 	listIcons.add("fa-" + item.name);
- 	icons.style.color = item.color;
+	icons.style.color = item.color;
 	//icons.style.color = ("black");
 	boxElement.append(icons);
 	boxElement.innerHTML += item.name;
 }
+
+var e = document.getElementById("selectType");
+function onChange() 
+{
+	console.log("Sono in onChange");
+	iconsContainerEl.innerHTML="";
+	var text = e.options[e.selectedIndex].text;
+	console.log(text);
+ 	for (let i = 0; i < listIcons.length; i++)
+	{
+		const obj = listIcons[i];
+		if (obj.type.localeCompare(text) == 0 || text === "all")
+		{
+			const boxElement = document.createElement('div');
+			boxElement.className = 'box';
+			createIconAndBoxElement(boxElement, obj);
+			iconsContainerEl.append(boxElement);
+		}
+		else
+		{
+			continue;
+		}
+	}
+}
+e.onchange = onChange;
+//onChange();

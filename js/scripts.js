@@ -23,7 +23,7 @@
  *     alfanumerici compresi tra 0 e 9 e A e F.
  * 2 - popolare le options della select della milestone 3 dinamicamente.
  */
-const listObjects =
+const listIcons =
 [
 	{
 		name: 'cat',
@@ -154,17 +154,32 @@ const listObjects =
 	}
 ];
 
+
+
 const iconsContainerEl = document.querySelector(".iconsContainer");
 
-const boxElement = document.createElement('div');
-    boxElement.className = 'box';
+for (let i=0; i < listIcons.length; i++)
+{
+	const boxElement = document.createElement('div');
+	boxElement.className = 'box';
+	const obj = listIcons[i];
+	createIconAndBoxElement(boxElement,obj);
+	iconsContainerEl.append(boxElement);
+}
 	
+
+
+
+
+function createIconAndBoxElement(boxElement, item)
+{
 	const icons = document.createElement('i');
 	const listIcons = icons.classList;
 	listIcons.add("fa-solid");
-	listIcons.add("fa-cat");
-	icons.style.color = "red";
-
+	listIcons.add("fa-" + item.name);
+/* 	icons.style.color = item.color;
+ */
+	icons.style.color = ("black");
 	boxElement.append(icons);
-	boxElement.innerHTML += "CAT";
-	iconsContainerEl.append(boxElement)
+	boxElement.innerHTML += item.name;
+}

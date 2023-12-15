@@ -177,7 +177,8 @@ function createIconAndBoxElement(boxElement, item)
 	const listIcons = icons.classList;
 	listIcons.add("fa-solid");
 	listIcons.add("fa-" + item.name);
-	icons.style.color = item.color;
+//	icons.style.color = item.color;
+	icons.style.color = createRandomColor();
 	//icons.style.color = ("black");
 	boxElement.append(icons);
 	boxElement.innerHTML += item.name;
@@ -208,3 +209,19 @@ function onChange()
 }
 e.onchange = onChange;
 //onChange();
+
+function generateRandomNumber()
+{
+	return Math.floor(Math.random() * 10);
+}
+
+function createRandomColor()
+{
+	let color = '#';
+	for(let i=0; i<6; i++)
+	{
+		let char = generateRandomNumber().toString(16);
+		color += char;
+	}
+	return color;
+}

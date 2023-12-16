@@ -156,6 +156,35 @@ const listIcons =
 
 
 
+	const headerDownEl = document.getElementById("header_down");
+
+	const labelElement = document.createElement('div');
+	labelElement.className = "labelSelect";
+	labelElement.innerHTML += "FILTRA PER TIPO"
+	headerDownEl.append(labelElement);  
+	
+	
+	const arrayElementSelect = ['all','animal','vegetable','user'];
+	
+	const selectEl = document.createElement('select')
+	selectEl.className = 'selectType';
+
+	for(let i=0; i<arrayElementSelect.length; i++)
+	{
+		const opt = document.createElement("option");
+		opt.value = i;
+		opt.innerHTML = arrayElementSelect[i];
+		selectEl.appendChild(opt);
+	}
+	
+	headerDownEl.append(selectEl);
+
+
+
+
+
+	
+
 const iconsContainerEl = document.querySelector(".iconsContainer");
 
 for (let i = 0; i < listIcons.length; i++)
@@ -184,7 +213,9 @@ function createIconAndBoxElement(boxElement, item)
 	boxElement.innerHTML += item.name;
 }
 
-var e = document.getElementById("selectType");
+
+
+var e = document.querySelector('.selectType');
 function onChange() 
 {
 	console.log("Sono in onChange");
@@ -225,3 +256,7 @@ function createRandomColor()
 	}
 	return color;
 }
+
+
+
+

@@ -185,8 +185,10 @@ headerDownEl.append(labelElement);
 const arrayElementSelect = ['all','animal','vegetable','user'];
 // 07 . Creiamo elemento select
 const selectEl = document.createElement('select');
+
 // 08 . Aggiungiamo alla select la classe 'selectType'
-selectEl.className = 'selectType';
+//selectEl.className = 'selectType';
+selectEl.id = 'selectType'
 // 09 . Cicliamo sui vari elementi della select
 for(let i=0; i<arrayElementSelect.length; i++)
 {
@@ -215,7 +217,8 @@ for (let i = 0; i < listIcons.length; i++)
 }
 
 // 13 . Selezioniamo lelemento (evento) relativo alla select
-const e = document.querySelector('.selectType');
+//const e = document.querySelector('.selectType');
+const e = document.getElementById('selectType');
 
 // 14 . Aspettiamo qualora si cambi selezione alla select (evento)
 e.onchange = onChange;

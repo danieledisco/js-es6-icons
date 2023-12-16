@@ -1,7 +1,7 @@
 /**
  * createRandomColor
  * 
- * Questa funzione tramite generateRandomNumber(15) genera dei 
+ * Questa funzione tramite generateRandomNumber(16) genera dei 
  * numero casuali tra 0 e 15 e tramite la funzione toString(16) li
  * trasforma in cifre esadecimali.
  * Genera quindi una stringa di 7 caratteri che inizia con il carattere # e termina
@@ -15,7 +15,7 @@ function createRandomColor()
 	let color = '#';
 	for(let i=0; i<6; i++)
 	{
-		let char = generateRandomNumber(15).toString(16);
+		let char = generateRandomNumber(16).toString(16);
 		color += char;
 	}
 	return color;

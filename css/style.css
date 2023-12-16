@@ -8,6 +8,7 @@ h1
     line-height: 6rem;
 }
 
+
 .iconsContainer
 {
     display: flex;
@@ -16,7 +17,7 @@ h1
 
     .box
     {
-        width: calc(  (100% - ( 8 * 4rem )) / 4 );
+        width: calc( (100% - (2 * 4 * 4rem) ) / 4 );
         border: 1px solid black;
         aspect-ratio: 1;
         display: flex;

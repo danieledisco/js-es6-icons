@@ -82,32 +82,3 @@ function createBoxElement(obj)
     createIconElement(boxElement, obj);
     iconsContainerEl.append(boxElement);
 }
-
-
-/**
- * onChange
- * 
- * Funzione scatenata dall'evento cambia selezione nella
- * select. 
- * Prima di tutto si cancella il dom usando .innerHTML="".
- * Poi si inizia a ciclare sugli elementi delle icone.
- * Se il tipo coincide con la selezione si inserisce nella dom oppure
- * se la selezione è all si inseriscono tutti
- */
-function onChange() 
-{
-	iconsContainerEl.innerHTML="";
-	const text = e.options[e.selectedIndex].text;
- 	for (let i = 0; i < listIcons.length; i++)
-	{
-		const obj = listIcons[i];
-		if (obj.type.localeCompare(text) == 0 || text === "all")
-		{
-            createBoxElement(obj);
-		}
-		else
-		{
-			continue;
-		}
-	}
-}

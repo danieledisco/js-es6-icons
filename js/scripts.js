@@ -218,10 +218,39 @@ for (let i = 0; i < listIcons.length; i++)
 
 // 13 . Selezioniamo lelemento (evento) relativo alla select
 //const e = document.querySelector('.selectType');
-const e = document.getElementById('selectType');
-
+//////////////////////////////////////////////////////   Mi viene richiesto di usare addEventListner
+// const e = document.getElementById('selectType');
+//////////////////////////////////////////////////////
 // 14 . Aspettiamo qualora si cambi selezione alla select (evento)
-e.onchange = onChange;
+///////////////////////////////////////////////////////  Mi viene richiesto di usare addEventListner
+// e.onchange = onChange;
+///////////////////////////////////////////////////////
 
+// 13bis . Selezioniamo l'elemento select
+const selectElement = document.getElementById('selectType');
 
+// 14bis . Aggiungiamo ad addEventListner l'evento change
+selectEl.addEventListener('change', function()
+{
+	// Cancelliamo il DOM
+	iconsContainerEl.innerHTML="";
 
+	// Selezioniamo l'attuale voce del select
+	const text = selectEl.options[selectEl.selectedIndex].text;
+
+	// Se l'icona è di tipo selezionato nella select o se la select è all
+	// si aggiunge il box all DOM
+	// altrimenti si passa all'indice seguente 
+ 	for (let i = 0; i < listIcons.length; i++)
+	{
+		const obj = listIcons[i];
+		if (obj.type.localeCompare(text) == 0 || text === "all")
+		{
+            createBoxElement(obj);
+		}
+		else
+		{
+			continue;
+		}
+	}
+})

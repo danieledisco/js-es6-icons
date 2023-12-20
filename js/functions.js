@@ -54,8 +54,8 @@ function createIconElement(boxElement, item)
 {
 	const icons = document.createElement('i');
 	const listIcons = icons.classList;
-	listIcons.add("fa-solid");
-	listIcons.add("fa-" + item.name);
+	listIcons.add(item.family);
+	listIcons.add(item.prefix + item.name);
 //	icons.style.color = item.color;
 	icons.style.color = createRandomColor();
 	//icons.style.color = ("black");
